@@ -22,9 +22,8 @@ def main(config):
             epilog=''
         )
 
-    # parser.add_argument('-d', action='store', dest='data', help='Data Value: Troop Letter or County Name')
-    # parser.add_argument('-t', action='store', dest='type', choices=['county', 'troop'], help='Type of Search, choose "county" or "troop"')
-    # parser.add_argument('-o', action='store', dest='output', choices=['print', 'json'], help='Output data to the terminal with print or json (json will not include notes)')
+    # TODO: Add specific feed argument
+    # parser.add_argument('-f', action='store', dest='specific_feed', help='Read just one feed')
     args = parser.parse_args()
     vars(args)
 
