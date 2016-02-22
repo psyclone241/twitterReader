@@ -1,0 +1,28 @@
+# Application Default Settings
+app = dict(
+    description = 'Read Twitter Feeds',
+    default_count = 5
+)
+
+# Twitter API Settings
+security = dict(
+    credentials = '/home/your_home_directory/.twitterReader_credentials',
+    consumer_key = 'somestuffgoeshere',
+    consumer_secret = 'morerandomstuffgoeshere'
+)
+
+# Twitter Feeds to Use
+feeds = {
+    'mikepatz',
+    'moneynavigator',
+}
+
+# Custom Configuration for Feeds Outside of Defaults
+feed_config = {
+    'mikepatz': {
+        'count': 10
+    },
+    'moneynavigator': {
+        'count': 5
+    }
+}
