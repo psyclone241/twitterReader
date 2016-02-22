@@ -3,4 +3,4 @@
   https://github.com/sixohsix/twitter/tree/master
 
 # Basic Usage
-<pre>python twitterReader.py</pre>
+  python twitterReader.py
