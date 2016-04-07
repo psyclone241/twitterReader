@@ -1,7 +1,10 @@
 # Application Default Settings
 app = dict(
     description = 'Read Twitter Feeds',
-    default_count = 5
+    default_count = 5,
+    count_ranges = xrange(1,31),
+    print_headers = False,
+    default_output = 'print',
 )
 
 # Twitter API Settings
