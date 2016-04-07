@@ -92,7 +92,11 @@ class twitterReader:
                 if self.output_type == 'object':
                     return data
                 else:
-                    print(data)
+                    if self.save_file:
+                        with open(self.save_file, 'w') as save_file:
+                            save_file.write(data)
+                    else:
+                        return data
 
         except TwitterHTTPError as twitterError:
             print('There was an authentication error, re-enter your credentials')
