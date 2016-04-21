@@ -21,9 +21,9 @@ class twitterReader:
     def main(self, config):
         self.specific_feed = None
         parser = argparse.ArgumentParser(
-                description=config.app['description'],
-                epilog=''
-            )
+            description=config.app['description'],
+            epilog=''
+        )
 
         parser.add_argument('-f', action='store', dest='specific_feed', help='Read just one feed', default=None)
         parser.add_argument('-s', action='store', dest='save_file', help='Save the output to file named....', default=None)
